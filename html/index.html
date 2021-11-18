@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Node Project </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+ 
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/index.js"></script>
+  
+  <link 
+        rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+  />
+
+
+  <link 
+       rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/
+       >
+</head>
+<body>
+<div class="container py-5">
+  
+  <div class="row">
+    <div class="col-md-5 pt-4">
+
+      <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#signup">SIGNUP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#login">LOGIN</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane py-4 active" id="signup">
+        <div class="card shadow px-4 animate__animated animate__fadeIn">
+          <div class="card-body">
+            <div align="center">
+              <img src="https://www.fundraisingdirectory.com.au/wp-content/uploads/2018/12/signup-new-logo-announcement.png" width="100%" class="mb-4">
+            </div>
+
+            <form id="signup-form">
+
+                <input type="text" class="form-control mb-4" placeholder="Name" name="name" id="name" value='pawan' required="required">
+
+                <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email" value='pwn2957@gmail.com' required="required">
+
+                <input type="number" class="form-control mb-4" placeholder="Mobile" name="mobile" id="mobile"  value='8377889037' required="required">
+
+                <input type="password" class="form-control mb-4" placeholder="Password" name="password" id="password" value='123' required="required">
+
+                <button type="submit" class="btn py-2" style="background-color:#24A7DF;color:white">SIGNUP</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane py-4 fade" id="login">
+        <div class="card shadow px-4 animate__animated animate__fadeIn">
+          <div class="card-body">
+            <div align="center">
+              <img src="https://www.fundraisingdirectory.com.au/wp-content/uploads/2018/12/signup-new-logo-announcement.png" width="100%" class="mb-4">
+            </div>
+
+            <form id="login-form">
+
+                <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="login-email" required="required">
+
+
+                <input type="password" class="form-control mb-4" placeholder="Password" name="password" id="login-password" required="required">
+
+                <div class="custom-control custom-switch mb-4">
+                  <input type="checkbox" class="custom-control-input" id="remember-me">
+                  <label class="custom-control-label" for="remember-me">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn py-2 mb-3" style="background-color:#24A7DF;color:white">LOGIN</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+    <!-- Then put toasts within -->
+    <div class="toast  text-white toast-1 d-none"    style="bottom:50px ; top: inherit; " data-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="...">
+        <strong class="mr-auto">massage</strong>
+        <small class="text-muted">2 seconds ago</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body" id='massage'>
+        message here ok
+      </div>
+    </div> 
+
+</div>
+<!-- toast -->
+
+ 
+
+
+<!-- loader -->
+<div class="loader d-none">
+  <i class="fas fa-spinner fa-pulse" style="color: white;font-size: 40px"></i>
+</div>
+ 
+
+</body>
+</html>
